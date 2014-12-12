@@ -1,4 +1,4 @@
-var daysOfTheWeek[]; {
+var daysOfTheWeek = []; {
 	
 	"day1" : "Wednesday",
 	"day2" : "Thursday",
