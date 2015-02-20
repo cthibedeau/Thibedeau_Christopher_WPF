@@ -55,4 +55,5 @@ if(turnsInMonopoly = ""){
 
 /*Initial IF statment does t exactly what it should. If a lesser number is put in it will print out the correct statment
   As well the comparriason evaluation works correctly and will notify the user that they did not put in any number in.
+ Tested to verify that the second If statement properly checks the over all times it took the two of us to get around the board.
 */
