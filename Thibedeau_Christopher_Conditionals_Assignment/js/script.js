@@ -37,7 +37,7 @@ if(turnsInMonopoly != ""){
 }
 
 //Does an overall comparrison of how long it took for both of us to both to get around the board. Gives a message to the user depending on the answer.
-(averageTimeForFullGame < averageTimeFullGameMe) ? console.log("It took you lest time than me to complete a game!") : console.log("It took me less times to complete a game!");
+(averageTimeForFullGame < averageTimeFullGameMe) ? console.log("It took you less time than me to complete a game!") : console.log("It took me less times to complete a game!");
 
 
 
