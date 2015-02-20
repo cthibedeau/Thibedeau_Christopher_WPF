@@ -24,7 +24,7 @@ var pleaseEnterANumber = parseInt(prompt("You did not enter a number, please ent
 //Code
 
 //Checks to see if the user took more turns than me to get around the board once, and that their answer isn't blank.k.
-if(turnsInMonopoly = ""){
+if(turnsInMonopoly != ""){
     //Asks the user to actually enter a number this time.
     console.log(pleaseEnterANumber);
     //Checks to see if the user took more turns than me to get around the board once, and that their answer isn't blank.
