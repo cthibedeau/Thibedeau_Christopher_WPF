@@ -53,8 +53,8 @@ var functionName = function(){
 functionName();
 */
 
-var clacArea = function(width, height){
-    var area = widh * height;
+var calcArea = function(width, height){
+    var area = width * height;
     return area;
 }
 
