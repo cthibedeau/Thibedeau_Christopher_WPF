@@ -70,7 +70,7 @@ function powerBallLottery(powerBall){//Function for crating an array of numbers 
 //Main Code
 playersName = thanksForTellingMe(playersName); //Stores the return from the Function thanksForTellingMe into the variable playersName
 
-playersAge = ageVerification(); //Sores the return from the function ageVerification in the variable playersAge.
+playersAge = ageVerification(); //Stores the return from the function ageVerification in the variable playersAge.
 
 console.log("Welcome to Kwike-E-Mart Mr. " + playersName + ", my name is Apu."); //A little humor added to the project, this piece actual just is a thank you to the user for giving their name. A well as returns a name in kind.
 
@@ -82,7 +82,7 @@ if(lottoTicket == "Florida State"){//This is an if statement to see which option
 
 }else{//If Florida State lotto is not chosen then it will run the statement for PowerBall.
 
-   lottoTicket = powerBallLottery(lottoTicket);//Stores the return from the Power Ball lotto.
+   lottoTicket = powerBallLottery(lottoTicket);//Stores the return from the function powerBallLottery into the variable lottoTicket.
 
     var powerBallNumber  = Math.random() * (35 - 1) + (1);//Creates a random number for the Power Ball.
 
