@@ -23,7 +23,7 @@ function ageVerification(howOldAreYou){ //Function for validating age of player
 
     howOldAreYou = parseInt(prompt("How old are you? You have to be at least 18 to play.")); //Asks you to give your age, also tells you what the minimum age is. It will convert the string to a number.
 
-    while(howOldAreYou <= 17){ //Request for players age, wont let them have a ticket with out it.
+    while(howOldAreYou <= 17 || isNaN(howOldAreYou)){ //Request for players age, wont let them have a ticket with out it.
 
         howOldAreYou = prompt("You need to be at least 18 to play, please try again."); //Apu is being silly and giving the player a second chance, or third to give A correct age.
 
