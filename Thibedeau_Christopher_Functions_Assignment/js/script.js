@@ -6,7 +6,7 @@
 //Variables
 var playersName = prompt("Welcome to my store, what is your name?"); //Asks the player's name
 var playersAge; //= prompt("How old are you, sorry have to make sure your old enough to play."); //Used to verify age of the user
-var lotoTicketNumbers; //= prompt("Would you like numbers for Powerball, \nor for Florida State Lottery?"); //Ask's if the player which version of lotto the player would like.
+var lottoTicketNumbers; //= prompt("Would you like numbers for Powerball, \nor for Florida State Lottery?"); //Ask's if the player which version of lotto the player would like.
 
 //Functions
 function thanksForTellingMe(wholeName){ //Function for validating name
@@ -23,46 +23,50 @@ function ageVerification(howOldAreYou){ //Function for validating age of player
 
     howOldAreYou = parseInt(prompt("How old are you? You have to be at least 18 to play.")); //Asks you to give your age, also tells you what the minimum age is. It will convert the string to a number.
 
-    while(howOldAreYou <= 17 || isNaN(howOldAreYou)){ //Request for players age, wont let them have a ticket with out it.
+    while(howOldAreYou <= 17 || isNaN(howOldAreYou)){ //Makes sure the age is at least 18, and that a number is actually imputed..
 
         howOldAreYou = prompt("You need to be at least 18 to play, please try again."); //Apu is being silly and giving the player a second chance, or third to give A correct age.
 
     }
 
-    return howOldAreYou; // Returns the age back to the function ageVerification so that it can be outputed later.
+    return howOldAreYou; // Returns the age back to the function ageVerification so that it can be outputted later.
 }
 
-function whichLotoDoYouWant(whichLoto){
+function whichLottoDoYouWant(whichLotto){
 
-    whichLoto = prompt("Would you like a Florida Lottery ticket, or a PowerBall ticket?");
+    whichLotto = prompt("Would you like a Florida Lottery ticket, or a PowerBall ticket?");
 
-    var myLotoArray = [];
+    var myLottoArray = [];
 
-        if(whichLoto === "Florida Lottery"){
+        if(whichLotto === "Florida Lottery"){
 
-            for(var i = 0; i <= 5; i++){
+            for(var i = 0; i <= 4; i++){
 
-                var flordiaLottery = Math.random() * (53 - 1) + (1);
+                var floridaLottery = Math.random() * (53 - 1) + (1);
 
-                flordiaLottery = Math.floor(flordiaLottery);
+                floridaLottery = Math.floor(floridaLottery);
 
-                myLotoArray[i] = flordiaLottery;
+                myLottoArray[i] = floridaLottery;
 
             }
 
         }else{
 
-            for(var i = 0; i <= 5; i++){
+            for(var h = 0; h <= 4; h++){
 
                 var powerBall = Math.random() * (59 - 1) + (1);
 
                 powerBall = Math.floor(powerBall);
 
-                myLotoArray[i] = powerBall;
+                myLottoArray[h] = powerBall;
             }
         }
 
-    return myLotoArray;
+    return myLottoArray;
+}
+
+function whichLottoDidYouPick(floridaLottery, powerBall){
+
 }
 
 //Main Code
@@ -70,12 +74,12 @@ playersName = thanksForTellingMe(playersName); //Stores the return from the Func
 
 playersAge = ageVerification(); //Sores the return from the function ageVerification in the variable playersAge.
 
-lotoTicketNumbers = whichLotoDoYouWant();
+lottoTicketNumbers = whichLottoDoYouWant();
 
 console.log("Welcome to Kwike-E-Mart Mr. " + playersName + ", my name is Apu."); //A little humor added to the project, this piece actual just is a thank you to the user for giving their name. A well as returns a name in kind.
 
-console.log("You are sticking with " + playersAge + " as your final answer. Good here is your " + lotoTicketNumbers + " ticket."); //This is Apu giving the player their ticket after verifying their age and asking them to come again.
+console.log("You are sticking with " + playersAge + " as your final answer. Good here is your " + lottoTicketNumbers + " ticket."); //This is Apu giving the player their ticket after verifying their age and asking them to come again.
 
-console.log("Your numbers for " + lotoTicketNumbers + " are.");
+console.log("Your numbers for " + lottoTicketNumbers + " are.");
 
 //Now you hear Apu's voice in your head as your reading. Enjoy.
