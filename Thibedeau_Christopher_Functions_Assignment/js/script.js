@@ -38,7 +38,7 @@ function floridaStateLottery(floridaLottery){
 
     var florida = [];
 
-            for(var i = 0; i <= 4; i ++){
+            for(var i = 0; i <= 4; i++){
 
                 floridaLottery = Math.random() * (53 - 1) + (1);
 
@@ -48,7 +48,7 @@ function floridaStateLottery(floridaLottery){
 
             }
 
-    return floridaLottery;
+    return florida;
 }
 
 function powerBallLottery(powerBall){
@@ -58,6 +58,7 @@ function powerBallLottery(powerBall){
             for(var h = 0; h <= 4; h++){
 
                 powerBall = Math.random() * (59 - 1) + (1);
+
                 powerBall = Math.floor(powerBall);
 
                 powerLotto[h] = powerBall;
@@ -86,6 +87,7 @@ if(lottoTicket == "Florida State"){
    lottoTicket = powerBallLottery(lottoTicket);
 
     var powerBallNumber  = Math.random() * (35 - 1) + (1);
+
     powerBallNumber = Math.floor(powerBallNumber);
 
     console.log("Your numbers for the Power Ball Lottery is " + powerBallLottery(lottoTicket) + " and you Power Ball Number is " + powerBallNumber + " luck. Thank you come again.");
